@@ -1,6 +1,5 @@
 html{
     font-size: 62.5%;
-    color: var(--white);
     font-family: "Roboto", sans-serif;
 }
 
@@ -27,4 +26,20 @@ header ul li a{
     color: var(--white);
     font-weight: 500;
     font-size: 1.6rem;
+}
+
+header ul li a:hover{
+    color: var(--color-text-hover);
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+/* Seção Sobre */
+
+.sobre h1{
+    color: var(--brown);
+}
+
+.sobre p{
+    color: var(--brown);
 }
