@@ -1,0 +1,30 @@
+html{
+    font-size: 62.5%;
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilização Header */
+header {
+    margin: 0 auto;
+    padding: 20px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bkg-color-header);
+    background-image: url(../images/bg__header--desk.png);
+}
+header img{
+    width: 120px;
+}
+
+header ul{
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
