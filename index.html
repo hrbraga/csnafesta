@@ -20,8 +20,8 @@
             <nav>
                 <ul>
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#festas">Festas e Eventos</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#petit">Petit Deli</a></li>
                     <li><a href="#orçamento">Orçamento</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -30,45 +30,53 @@
     </header>
     <main>
         <section class="slider">
-            <div class="slider-content">
 
-                <input type="radio" name="btn-radio" id="radio1">
-                <input type="radio" name="btn-radio" id="radio2">
-                <input type="radio" name="btn-radio" id="radio3">
+            <div class="slides">
 
-                <div class="slide-box primeiro">
-                    <img class="img-desktop" src="src/images/15anos.jpg" alt="Festa 15 anos">
-                    <img class="img-mobile" src="src/images/mobile-15anos.jpg" alt="Festa 15 anos">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="src/images/15anos.jpg" alt="Festa de 15 anos">
                 </div>
 
-                <div class="slide-box">
-                    <img class="img-desktop" src="src/images/casamento1.jpg" alt="Festa de Casamento">
-                    <img class="img-mobile" src="src/images/mobile-casamento1.jpg" alt="Festa de Casamento">
+                <div class="slide">
+                    <img src="src/images/casamento1.jpg" alt="Festa de Casamento">
                 </div>
 
-                <div class="slide-box">
-                    <img class="img-desktop" src="src/images/casamento2.jpeg" alt="Festa de Casamento">
-                    <img class="img-mobile" src="src/images/mobile-casamento2.jpeg" alt="Festa de Casamento">
+                <div class="slide">
+                    <img src="src/images/casamento2.jpeg" alt="Festa de Casamento">
                 </div>
 
-                <div class="nav-auto">
+
+                <div class="navigation-auto">
                     <div class="auto-btn1"></div>
                     <div class="auto-btn2"></div>
                     <div class="auto-btn3"></div>
                 </div>
+            </div>
+            
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
 
-                <div class="nav-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-            </div>    
         </section>
 
-        <section class="sobre">
-            <h1>Somos a Cacau Show Cornélio Procópio</h1>
-            <p>Na Cacau Show Cornélio Procópio, transformamos momentos especiais em doces lembranças. Oferecemos uma linha exclusiva de bombons os Petit Deli, perfeitos para eventos como casamentos, festas de 15 anos e outras celebrações. Com qualidade impecável e sabores irresistíveis, nossas criações adicionam um toque de elegância e sofisticação ao seu evento. Solicite seu orçamento e surpreenda seus convidados com o melhor do chocolate.</p>
+        <section class="sobre" id="sobre">
+            <img src="src/images/equipe.jpeg" alt="Equipe funcionários Cacau Show">
+            <div class="sobre-infos">
+                <h1>Somos a Cacau Show Cornélio Procópio</h1>
+                <p>Na Cacau Show Cornélio Procópio, nossa unidade tem 16 anos e nossa missão é transformar momentos
+                    especiais em doces lembranças. Oferecemos uma linha exclusiva de bombons os Petit Deli, perfeitos
+                    para eventos como casamentos, festas de 15 anos e outras celebrações. Com qualidade impecável e
+                    sabores irresistíveis, nossas criações adicionam um toque de elegância e sofisticação ao seu evento.
+                    Solicite seu orçamento e surpreenda seus convidados com o melhor do chocolate.</p>
+            </div>
         </section>
+
     </main>
 </body>
 
