@@ -1,5 +1,5 @@
 let count = 1;
-const tempoSlide = 4000;
+const tempoSlide = 5000;
 
 document.getElementById('radio1').checked = true;
 
