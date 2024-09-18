@@ -10,6 +10,12 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
 /* Estilização Header */
 header {
     margin: 0 auto;
@@ -48,6 +54,7 @@ header ul li a:hover {
     display: flex;
     padding: 40px 2%;
     gap: 30px;
+    background-color: var(--bkg-color-header);
     justify-content: center;
     align-items: center;
 }
@@ -61,15 +68,19 @@ header ul li a:hover {
 .sobre h1 {
     text-align: center;
     margin-bottom: 45px;
-    color: var(--brown);
+    color: var(--white);
     font-size: 2.5rem;
 }
 
 .sobre p {
-    color: var(--brown);
+    color: var(--white);
     font-size: 1.6rem;
     font-weight: 300;
     text-align: justify;
+}
+
+.sobre p a{
+    color: #f8eb73e1;
 }
 
 /* Swipper*/
@@ -92,11 +103,6 @@ swiper-slide img {
     width: 100%;
 }
 
-.petitDeli h2{
-   text-align: center;
-   font-size: 2.5rem;
-}
-
 swiper-slide h3{
     position: absolute;
     bottom: 18%;
@@ -109,4 +115,65 @@ swiper-slide p{
     bottom: 7%;
     left: 10%;
     font-size: 1.4rem;
+}
+
+/* Formulário */
+
+form {
+    background-color: var(--bkg-color-header);
+    color: var(--white);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h2{
+    margin-bottom: 15px;
+}
+
+form .orcamento-form{
+    padding: 15px 20px;
+    min-width: 350px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+form h3{
+    font-size: 2rem;
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form .dados-evento label, legend{
+    font-size: 1.6rem;
+}
+
+form .dados-evento{
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+form .dados-evento button{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #000;
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+form .dados-evento button:hover{
+    background-color: var(--color-text-hover);
+    color: var(--brown);
 }
