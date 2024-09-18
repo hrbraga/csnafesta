@@ -21,9 +21,6 @@ h2{
 header {
     margin: 0 auto;
     padding: 20px 2%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--bkg-color-header);
     background-image: url(../images/bg__header--desk.png);
 }
@@ -32,15 +29,44 @@ header img {
     width: 120px;
 }
 
-header ul {
+.nav{
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.nav-list{
+    display: flex;
+    gap: 32px;
+}
+
+
+.hamburger{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
 
 header ul li a {
     color: var(--white);
     font-weight: 500;
     font-size: 1.6rem;
+    padding-block: 16px;
 }
 
 header ul li a:hover {
@@ -159,7 +185,7 @@ form .dados-evento{
 
 form .form-btn{
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 form .dados-evento button{
