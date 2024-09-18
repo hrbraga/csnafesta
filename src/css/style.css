@@ -200,6 +200,11 @@ form .dados-evento button{
     transition: 0.5s;
 }
 
+.dados-evento span{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
 form .dados-evento button:hover{
     background-color: var(--color-text-hover);
     color: var(--brown);
