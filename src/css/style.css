@@ -14,6 +14,7 @@ h2{
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
+    margin: 25px 0;
 }
 
 /* Estilização Header */
@@ -176,4 +177,67 @@ form .dados-evento button{
 form .dados-evento button:hover{
     background-color: var(--color-text-hover);
     color: var(--brown);
+}
+
+/* Botão Back-to-top */
+.back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: var(--brown);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Escondido inicialmente */
+    z-index: 1000;
+    transition: 0.2s;
+}
+
+.back-to-top img{
+    width: 25px;
+    height: 25;
+}
+
+.back-to-top:hover {
+    background-color: rgba(59, 0, 0, 0.842);
+}
+
+/* Footer */
+
+footer{
+    border-top: 2px solid white;
+    box-shadow: 0 0 8px #ffffff73;
+}
+
+footer .footer-primeira{
+    background-color: var(--bkg-color-header);
+    color: var(--white);
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 120px;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+footer ul li a{
+    color: var(--white);
+    font-size: 2rem;
+}
+
+footer ul li a:hover{
+    color: var(--color-text-hover);
 }
